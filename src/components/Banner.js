@@ -8,11 +8,13 @@ function Banner() {
   
   return (
     <div className='lmj-banner'>
+      
      <div className='Imj-banner-row'>
       <img src={logo} alt='La maison jungle' className='lmj-logo' />
-      <h1 className='lmj-title'>{title}</h1>
-      </div>
+      <h1 className='lmj-title'>{title}</h1> 
       <Recommendation />
+      </div>
+      
     </div>
   )
 }
