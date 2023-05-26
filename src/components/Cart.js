@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import '../styles/Cart.css'
 
 function Cart({ cart, updateCart }) {
@@ -7,6 +7,14 @@ function Cart({ cart, updateCart }) {
 		(acc, plantType) => acc + plantType.amount * plantType.price,
 		0
 	)
+	/* useEffect(() => {
+		alert(`J'aurai ${total}€ à payer 💸`)
+	},[total]) */ //lo aggiungo se voglio che l'avviso è visualizzato solo se il totate cambia
+	useEffect(() => {
+		document.title = `LMJ: ${total}€ d'achats`
+	}, [total]) //lo aggiungo se voglio che l'avviso è visualizzato solo nel titolo della pagina
+	
+
 	return isOpen ? (
 		<div className='lmj-cart'>
 			<button
