@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# LA MAISON JUNGLE
+
+## Getting Started with Create my First React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
