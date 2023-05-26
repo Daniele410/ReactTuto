@@ -6,6 +6,7 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	width: 200px;
+	box-shadow: 1px 3px 8px black;
 }
 
 .lmj-cart-add-button {
@@ -27,8 +28,10 @@
 .lmj-cart-closed {
 	padding: 32px;
 	width: 200px;
+	box-shadow: 1px 1px 5px black;
 }
 
 .lmj-cart-closed > button {
 	color: black;
+	
 }
